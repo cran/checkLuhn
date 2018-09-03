@@ -1,0 +1,7 @@
+f9c6a95a78a05a2453a4db22049d6018 *DESCRIPTION
+5dd04f43eb70d298be4caeb5a7f7ebb6 *NAMESPACE
+0e3a9448ae64c67b164f3369de7bee19 *R/checkLuhn.R
+c81f532819efdb90c89f9eed1c5719e9 *README.md
+d1d2cfef63e2baa8aa205695295ad044 *man/checkLuhn.Rd
+745154b43c03275c9b81909cc4066b51 *tests/testthat.R
+5f58208f7418537bdad346dd1a9f4190 *tests/testthat/test.checkLuhn.1.R
