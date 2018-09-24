@@ -1,8 +1,9 @@
-[![Build
-Status](https://travis-ci.org/adamjdeacon/checkLuhn.svg?branch=master)](https://travis-ci.org/adamjdeacon/checkLuhn)
+# CheckLuhn
+
+[![Build Status](https://travis-ci.org/adamjdeacon/checkLuhn.svg?branch=master)](https://travis-ci.org/adamjdeacon/checkLuhn)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/adamjdeacon/checkLuhn?branch=master&svg=true)](https://ci.appveyor.com/project/adamjdeacon/checkLuhn)
-[![Coverage
-Status](https://codecov.io/gh/adamjdeacon/checkLuhn/branch/master/graph/badge.svg)](https://codecov.io/gh/adamjdeacon/checkLuhn?branch=master)
+[![Coverage Status](https://codecov.io/gh/adamjdeacon/checkLuhn/branch/master/graph/badge.svg)](https://codecov.io/gh/adamjdeacon/checkLuhn?branch=master)
+[![Rdoc](http://www.rdocumentation.org/badges/version/checkLuhn)](http://www.rdocumentation.org/packages/checkLuhn)
 
 ## Overview
 
@@ -15,6 +16,9 @@ function; it was designed to protect against accidental errors, not malicious
 attacks. Most credit cards and many government identification numbers use the 
 algorithm as a simple method of distinguishing valid numbers from mistyped or 
 otherwise incorrect numbers.
+
+The `issuer` function will can return the Card Issuer/Scheme and if that scheme
+is active or not
 
 ## Installation
 
@@ -47,7 +51,17 @@ checkLuhn(input)
 input <- "34000000 0000 009"
 checkLuhn(input)
 [1] TRUE
+
+# Check for card type
+input <- '378282246310005'
+> issuer(input)
+# A tibble: 1 x 2
+  issuer           active
+  <chr>            <chr> 
+1 American Express Yes  
 ```
+
+
 
 ## Getting help
 
